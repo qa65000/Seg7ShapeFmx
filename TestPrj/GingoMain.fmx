@@ -1,0 +1,60 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Seg7Test'
+  ClientHeight = 267
+  ClientWidth = 321
+  FormFactor.Width = 1600
+  FormFactor.Height = 1200
+  FormFactor.Devices = [dkDesktop]
+  object Button1: TButton
+    DisableFocusEffect = False
+    Height = 49.000000000000000000
+    Position.X = 64.000000000000000000
+    Position.Y = 192.000000000000000000
+    Text = 'Suffle'
+    Width = 177.000000000000000000
+    OnClick = Button1Click
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 50
+    OnTimer = Timer1Timer
+    Left = 256
+    Top = 128
+  end
+  object Seg7Shape1: TSeg7Shape
+    Num = 255
+    SEG_A = True
+    SEG_B = True
+    SEG_C = True
+    SEG_D = True
+    SEG_E = True
+    SEG_F = True
+    SEG_G = True
+    Fill.Color = xFF005EA6
+    Stroke.Color = xFFFAFAFA
+    Stroke.Thickness = 3.000000000000000000
+    Height = 144.000000000000000000
+    Position.X = 56.000000000000000000
+    Position.Y = 24.000000000000000000
+    Width = 100.000000000000000000
+  end
+  object Seg7Shape2: TSeg7Shape
+    Num = 255
+    SEG_A = True
+    SEG_B = True
+    SEG_C = True
+    SEG_D = True
+    SEG_E = True
+    SEG_F = True
+    SEG_G = True
+    Fill.Color = xFF005EA6
+    Stroke.Color = xFFFAFAFA
+    Stroke.Thickness = 3.000000000000000000
+    Height = 144.000000000000000000
+    Position.X = 152.000000000000000000
+    Position.Y = 24.000000000000000000
+    Width = 100.000000000000000000
+  end
+end
